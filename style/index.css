@@ -89,7 +89,7 @@ img{
 .navlist{
     position: absolute;
     top: 0;
-    left: 140px;
+    left: 180px;
 }
 .navlist a{
     color: #33302e;
@@ -283,4 +283,81 @@ img{
     text-align: center;
     line-height: 58px;
     font-size: 14px;
+}
+.notice{
+    width: 1210px;
+    height: 750px;
+    margin: 0 auto;
+}
+.notice li{
+    width: 390px;
+    height: 240px;
+    margin: 0 0 10px 10px;
+    position: relative;
+    float: left;
+}
+.notice li a{
+    color: #33302e;
+}
+.notice li img{
+    width: 100%;
+}
+.notice li p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.rmb{
+    font-size: 14px;
+}
+.price{
+    font-size: 18px;
+    font-weight: bold;
+}
+.notice li.ct{
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 106px;
+}
+.notice li.ct h4{
+    height: 41px;
+    font-size: 30px;
+}
+.notice li.ct :nth-child(1){
+    font-weight: normal;
+}
+.notice li.ct :nth-child(2){
+    color: #e5e1df;
+}
+.store{
+    width: 100%;
+    height: 699px;
+    background: #f5f3f2;
+    margin-top: 100px;
+}
+.store .box{
+    width: 1190px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.storeleft{
+    width: 390px;
+    margin-left: 100px;
+}
+.storeleft h2{
+    width: 390px;
+    text-align: center;
+    font-size: 30px;
+    color: #33302e;
+    font-weight: normal;
+}
+.storeaddress{
+    width: 390px;
+    margin: 45px 0 15px 0;
+    display: flex;
+}
+.storeaddress div{
+    margin-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
 }
