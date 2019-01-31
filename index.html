@@ -7,6 +7,9 @@
     <title>金海马商城-家居网上商城</title>
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -25,6 +28,8 @@
             <div class="searchbox">
                 <form class="search" action="">
                     <input class="puttxt" type="text" >
+                    <ul class="lis">
+                    </ul>
                     <i class="iconfont fdj">&#xe633;</i>
                 </form>
             </div>
@@ -287,7 +292,16 @@
         <!-- 导航栏 -->
         <!-- 轮播图 -->
         <div class="banner">
-            <img src="./img/idnex/img.jpg" alt="">
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href=""><img src="./img/idnex/img (44).jpg" alt=""></a></div>
+                              <div class="swiper-slide"><a href=""><img src="./img/idnex/img.jpg" alt=""></a></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+            
+                        <div class="swiper-pagination"></div>
+                </div>
         </div>
         <!-- 推荐 -->
         <div class="goodbox">
@@ -602,13 +616,106 @@
         <!-- 大家都再说 -->
         <div class="evaluata">
             <div class="evatop">
-                <h4>大家都再说</h4>
-                <p>
-                    <span><</span><span>></span>
-                </p>
+                <h4>大家都再说</h4><br>
+                <p><span class="request"><</span><span class="add">></span></p>
             </div>
-            
+            <div class="swiper-container1">
+                    <div class="swiper-wrapper1">
+                            <div class="swiper-slide"><a href=""><img src="./img/idnex/img (23).jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href=""><img src="./img/idnex/img (24).jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href=""><img src="./img/idnex/img (25).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (7).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (36).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (37).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (11).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (13).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (14).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (15).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (17).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (18).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (19).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (20).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (21).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (22).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (23).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (24).jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href=""><img src="./img/idnex/img (25).jpg" alt=""></a></div>
+                    </div>
+                    
+            </div>
         </div>
+        <script>
+            
+            function Go(){
+
+            }
+            Object.assign(Go.prototype,{
+                init:function(){
+                    this.timer = null;
+                    this.idnex = 0;
+                    $(".request").on("click",this.move.bind(this));
+                    $(".add").on("click",this.move.bind(this));
+                    $(".request").on("click",this.requestindex.bind(this));
+                    $(".add").on("click",this.addindex.bind(this)); 
+                    // $(".swiper-wrapper1").on("mouseenter",this.sS.bind(false,"stop"));
+                    // $(".swiper-wrapper1").on("mouseleave",this.sS.bind(false,"start"));
+                },
+                addindex:function(){
+                    if(this.idnex == 15){
+                        $(".swiper-wrapper1").css({
+                            "margin-left":"0"
+                        });
+                        this.idnex=0;
+                        console.log(this.idnex);
+                    }else{
+                       this.idnex++; 
+                    }
+                },
+                requestindex:function(){
+                    if(this.idnex==0){
+                        $(".swiper-wrapper1")
+                        .css({
+                            "left":"-4470px"
+                        })
+                        this.idnex =15;
+                    }else{
+                       this.idnex--; 
+                    }
+                },
+                move:function(){
+                    // if(this.idnex <12 && this.idnex>0){
+                      $(".swiper-wrapper1")
+                    .stop()
+                    .animate({
+                        left:"-298"*this.idnex
+                    },500)  
+                    // } 
+                },
+                // sS:function(type){
+                //     if(type == "stop"){
+                //         clearInterval(this.timer);
+                //         this.timer = null;
+                //     console.log(0);
+                //     }
+                //     if(type == "start"){
+                //         timer = setInterval(()=>{
+                //             // if(this.timer !== null)return false;
+                //             $(".add").click(); 
+                //             console.log(1);
+                //         },3000)
+                //     }
+                // }
+            }
+            )
+            var go = new Go();
+            go.init();
+            // go.sS("start");
+            timer = setInterval(()=>{
+                //             // if(this.timer !== null)return false;
+                            $(".add").click(); 
+                            // console.log(1);
+                        },3000)
+        </script>
         <!-- 大家都在说 -->
         <!-- 联系我们 -->
         <div class="usbox">
@@ -670,5 +777,7 @@
             </div>
         </div>
     </div>
+    <script src="./javascripts/index.js"></script>
+    
 </body>
 </html>
