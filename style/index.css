@@ -576,7 +576,6 @@ img{
     height: 475px;
     margin: 0 auto;
     margin-top: 50px;
-    background: #f60;
 }
 .evatop{
     display: flex;
@@ -586,6 +585,67 @@ img{
 .evatop h4{
     font-size: 30px;
     font-weight: normal;
+}
+.swiper-slide>a{
+    display: block;
+    width: 290px;
+    height: 190px;
+}
+.user{
+    width: 270px;
+    margin-left: 10px;
+    border-bottom: 1px solid #99918b;
+}
+.user a{
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #99918b;  
+}
+.user a:hover{
+    color: #f60;
+    cursor: pointer;
+}
+.user span{
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    line-height: 30px;
+    float: right;
+    font-weight: bold;
+}
+.pingjia{
+    width: 270px;
+    height: 50px;
+    margin-left: 10px;
+    /* word-wrap: break-word; */
+    white-space: normal;
+    font-size: 12px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.swiper-slide p{
+    width: 270px;
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #99918b;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.swiper-slide p span:first-child:hover{
+    color: #f60;
+    cursor: pointer;
 }
 .request,.add{
     font-family: "宋体";
