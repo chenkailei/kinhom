@@ -18,6 +18,111 @@ var mySwiper = new Swiper('.swiper-container', {
 
 // banner图
 
-// 大家都在说
+// 联动
+        var json = null;
+        $.ajax("./json/position.json")
+        .then((res)=>{
+            console.log(res);
+            json = res;
+            rend()
+        })
 
- // 大家都在说
+        function rend(){
+          var city = json["100000"];
+          var html = "";
+          for(var code in city){
+            html += `<option value="${code}">${city[code]}</option>`;
+          }
+          $(".city").html(html);
+        }
+        $(".city").change(function(){
+          render(this.value)
+          // console.log($(".city")[0]);
+          // console.log(this.value);
+        })
+        function render(code){
+          var area = json[code];
+          var html = "";
+          for(var code in area){
+            html += `<option value="${code}">${area[code]}</option>`
+          }
+          $(".area").html(html);
+        }
+        
+        $(".area").change(function(){
+          render2(this.value)
+          // console.log(this.value);
+        })
+        function render2(code){
+          var st = json[code];
+          var html = "";
+          for(var code in st){
+            html += `<option value="${code}">${st[code]}</option>`
+          }
+          $(".st").html(html);
+        }
+        
+        
+        // 搜索
+        function jsonp(url,jsonp_key){
+          return new Promise(function(resolve,reject){
+    
+                // 函数名随机处理避免占用命名空间，避免冲突;
+    
+                var randomName = "_" + Date.now()
+                // console.log(randomName);
+    
+                window[randomName] = function(res){
+                      // console.log(res);
+                      resolve(res);
+                }
+                // 2. 创建并插入script标签;
+                var script = document.createElement("script");
+    
+                // 当前url之中是否存在 ? （存在问好表示已经有数据了），我应该用& 去拼接数据，反之则用 ?;
+                url = url + (/\?/.test(url) ? "&" : "?") + jsonp_key + "=" + randomName;
+    
+                script.src = url;
+                // 3. 标签放入页面之中;
+                document.body.appendChild(script);
+                // 4. 清理垃圾;
+                script.onload = function(){
+                      this.remove();
+    
+                      window[randomName] = null;
+                      delete window[randomName];
+                }
+          })
+    }
+            var search = document.getElementById("search_baidu");
+            var list = document.getElementById("list");
+
+            search.addEventListener("input",_throttle(handlerSearch,500));
+            var showNum = 4;
+            var timer = null;
+            function handlerSearch(){
+                  console.log("hahahaha");
+                  var url = `https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${search.value}&json=1&p=3&sid=1422_21089_28131_26350_28266&req=2&csor=2`;
+                  jsonp(url,"cb")
+                  .then(function(res){
+                        console.log(res);
+                        var html = "";
+                        res.s.every((item,index)=>{
+
+                              html += `<li>${item}</li>`
+                              return index < showNum;
+                        })
+                        list.innerHTML = html;
+                  })
+            }
+            function _throttle(callback,dealy){
+              // 利用闭包，让 timer 私有化;
+              var timer = null;
+              return function(){
+                    clearTimeout(timer);
+                    // 如果已经过了规定的时间可以再次执行代码了;
+                    timer = setTimeout(function(){
+                         callback(); 
+                    },dealy)
+              }
+        }

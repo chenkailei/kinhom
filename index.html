@@ -27,13 +27,15 @@
             <!-- 搜索框 -->
             <div class="searchbox">
                 <form class="search" action="">
-                    <input class="puttxt" type="text" >
-                    <ul class="lis">
+                    <input class="puttxt" id="search_baidu" type="text" >
+                    <ul class="lis" id="list">
                     </ul>
                     <i class="iconfont fdj">&#xe633;</i>
                 </form>
             </div>
+            
         </div>
+        
         <!-- 导航栏 -->
         <div class="navbox">
             <div class="nav">
@@ -414,12 +416,32 @@
                 <div class="storeleft">
                     <h2>实体店</h2>
                     <div class="storeaddress">
-                        <div>深圳市<i class="iconfont">&#xe60b;</i>
-                            
-                        </div>
-                        <div>住宅<i class="iconfont">&#xe60b;</i></div>
-                        <div>龙华万众城店<i class="iconfont" style="margin-left:90px">&#xe60b;</i></div>
+                        <select class="city"><option value="null">东莞市</option><i class="iconfont">&#xe60b;</i>
+                        </select>
+                        <select class="area"><option value="null">住宅</option><i class="iconfont">&#xe60b;</i></select>
+                        <select class="st"><option value="null">东莞金海马店</option><i class="iconfont" style="margin-left:90px">&#xe60b;</i></select>
                     </div>
+                    <div class="sto">
+                        <img src="./img/idnex/dg01.jpg!max" alt="">
+                        <span class="dizhi">地址：东莞市东城区东城中路与东纵大道交汇处336号万盛广场香江家居二楼</span>
+                        <span class="phone">电话：0769-28689625</span>
+                        <span class="findus">
+                            <a href="">发送到手机</a>
+                            <span>|</span>
+                            <a href="">查看地图</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="storeright">
+                    <div class="guding">
+                        <a href=""><img src="./img/idnex/img (55).jpg" alt=""></a>
+                    </div>
+                    <ul>
+                        <li><a href=""><img src="./img/idnex/dg001.jpg!mid" alt=""></a></li>
+                        <li><a href=""><img src="./img/idnex/dg002.jpg!mid" alt=""></a></li>
+                        <li><a href=""><img src="./img/idnex/dg003.jpg!mid" alt=""></a></li>
+                        <li><a href=""><img src="./img/idnex/dg004.jpg!mid" alt=""></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -836,6 +858,7 @@
         </div>
         <script>
             var tp = true;
+            var timer2 = null;
             function Go(){
             }
             Object.assign(Go.prototype,{
@@ -885,19 +908,25 @@
             });
             $(".swiper-wrapper1").on("mouseleave",()=>{
                 timer = setTimeout(()=>{
-                    if(tp == false)return false;
+                    if(tp == false){
+                        clearInterval(timer2);
+                        tp=true;
+                        return false;
+                    }
+                    if(tp == true){
                             $(".add").click();
-                            // console.log(1);
-                            tp = true;
-                            
+                    }
                         },1000)
             });
             var go = new Go();
             go.init();
-            setInterval(()=>{
-                $(".swiper-wrapper1").trigger('mouseleave'); 
-                console.log(tp);
-            },1000)
+            function start(){
+                timer2 = setInterval(()=>{
+                    $(".swiper-wrapper1").trigger('mouseleave'); 
+                    console.log(tp);
+                },2000)
+            }
+            start();
         </script>
         <!-- 大家都在说 -->
         <!-- 联系我们 -->
