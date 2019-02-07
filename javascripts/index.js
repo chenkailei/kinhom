@@ -1,5 +1,4 @@
-// 搜索框
-// 搜索框
+
 
 
 // banner图
@@ -22,7 +21,7 @@ var mySwiper = new Swiper('.swiper-container', {
         var json = null;
         $.ajax("./json/position.json")
         .then((res)=>{
-            console.log(res);
+            // console.log(res);
             json = res;
             rend()
         })
@@ -101,14 +100,13 @@ var mySwiper = new Swiper('.swiper-container', {
             var showNum = 4;
             var timer = null;
             function handlerSearch(){
-                  console.log("hahahaha");
+                  // console.log("hahahaha");
                   var url = `https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${search.value}&json=1&p=3&sid=1422_21089_28131_26350_28266&req=2&csor=2`;
                   jsonp(url,"cb")
                   .then(function(res){
                         console.log(res);
                         var html = "";
                         res.s.every((item,index)=>{
-
                               html += `<li>${item}</li>`
                               return index < showNum;
                         })
@@ -116,13 +114,39 @@ var mySwiper = new Swiper('.swiper-container', {
                   })
             }
             function _throttle(callback,dealy){
-              // 利用闭包，让 timer 私有化;
               var timer = null;
               return function(){
                     clearTimeout(timer);
-                    // 如果已经过了规定的时间可以再次执行代码了;
                     timer = setTimeout(function(){
                          callback(); 
                     },dealy)
               }
         }
+
+        // 吸顶
+        var topnum = 400;
+        $(document).scroll(()=>{
+            if($(document).scrollTop()<topnum){
+                // console.log(1);
+                $(".xiding").hide();
+                // console.log($(document).scrollTop());
+                return false;
+            }
+            if($(document).scrollTop()>=topnum){
+                console.log(2);
+                $(".xiding").show();
+                $(".xiding")
+                .animate({
+                    "height":"60"
+                },500)
+            }
+        })
+
+
+        // 回到顶部
+        $(".gotop").on("click",()=>{
+          $("html,body")
+          .animate({
+            "scrollTop":0
+          },500)
+      })

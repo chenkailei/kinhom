@@ -35,7 +35,18 @@
             </div>
             
         </div>
-        
+        <!-- 右侧导航 -->
+        <ul class="rignav">
+            <li>实体店领<br>￥1000</li>
+            <li><i class="iconfont">&#xe603;</i><br>客服</li>
+            <li><i class="iconfont">&#xe607;</i><br>手机官网
+                <div class="app">
+                    <img src="./img/idnex/img (42).jpg" alt="">
+                </div>
+            </li>
+            <li class="gotop"><i class="iconfont">&#xe63f;</i><br>回到顶部</li>
+        </ul
+        <!-- 右侧导航 -->
         <!-- 导航栏 -->
         <div class="navbox">
             <div class="nav">
@@ -292,6 +303,29 @@
             </div>
         </div>
         <!-- 导航栏 -->
+        <!-- 吸顶 -->
+        <div class="xiding">
+            <div class="xdbox">
+                <ul class="xdnav">
+                    <li class="active"><a href="">首页</a></li>
+                    <li><a href="">住宅专场</a></li>
+                    <li><a href="">办公专场</a></li>
+                    <li><a href="">体验馆</a></li>
+                </ul>
+                <div class="searchbox">
+                        <form class="search" action="">
+                            <input class="puttxt" id="search_baidu" type="text" >
+                            <ul class="lis" id="list">
+                            </ul>
+                            <i class="iconfont fdj">&#xe633;</i>
+                        </form>
+                    </div>
+            </div>
+        </div>
+        <script>
+        
+        </script>
+        <!-- 吸顶 -->
         <!-- 轮播图 -->
         <div class="banner">
                 <div class="swiper-container">
@@ -923,7 +957,7 @@
             function start(){
                 timer2 = setInterval(()=>{
                     $(".swiper-wrapper1").trigger('mouseleave'); 
-                    console.log(tp);
+                    // console.log(tp);
                 },2000)
             }
             start();

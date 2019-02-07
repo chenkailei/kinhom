@@ -179,6 +179,77 @@ img{
 .secnav .one .navactive{
     color: #f60;
 }
+.rignav{
+    position: fixed;
+    z-index: 100;
+    right: 0px;
+    top: 50%;
+    margin-top: -124px;
+    width: 60px;
+    height: 248px;
+}
+.rignav li{
+    width: 100%;
+    height: 60px;
+    margin-top: 2px;
+    background: #99918b;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+}
+.rignav li:hover{
+    cursor: pointer;
+}
+.rignav li:nth-child(2){
+    background: #f60;
+}
+.rignav li:nth-child(3):hover .app{
+    display: block;
+}
+.app{
+    width: 140px;
+    height: 300px;
+    position: absolute;
+    top: -120px;
+    left: -142px;
+    display: none;
+}
+.xiding{
+    width: 100%;
+    height: 0px;
+    box-shadow: 1px 1px 2px #000;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    background: #fff;
+    display: none;
+}
+.xdbox{
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+}
+.xdnav li{
+    float: left;
+    line-height: 60px;
+    margin-left: 50px;
+}
+.xdnav li a{
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.xiding .searchbox{
+    margin-top: 10px;
+}
+.xdnav .active a{
+    color: #f60;
+}
+.xdnav .active a{
+    border-bottom: 2px solid #f60;
+}
 .one:hover{
     background: #4c4846;
 }
