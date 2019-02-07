@@ -179,6 +179,29 @@ img{
 .secnav .one .navactive{
     color: #f60;
 }
+.Leftnav{
+    width: 50px;
+    height: 344px;
+    position: fixed;
+    left: 260px;
+    top: 50%;
+    margin-top: -100px;
+    z-index: 100;
+    background: #fff;
+    font-size: 12px;
+    opacity: 0;
+}
+.Leftnav li{
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e6e1df;
+    line-height: 48px;
+    text-align: center;
+    color: #99918b;
+}
+.Leftnav .active{
+    color: #f60;
+}
 .rignav{
     position: fixed;
     z-index: 100;
@@ -224,7 +247,7 @@ img{
     z-index: 101;
     top: 0;
     background: #fff;
-    display: none;
+    opacity: 0;
 }
 .xdbox{
     width: 1190px;

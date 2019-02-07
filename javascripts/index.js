@@ -124,21 +124,28 @@ var mySwiper = new Swiper('.swiper-container', {
         }
 
         // 吸顶
-        var topnum = 400;
+        var topnum = 150;
         $(document).scroll(()=>{
             if($(document).scrollTop()<topnum){
-                // console.log(1);
-                $(".xiding").hide();
-                // console.log($(document).scrollTop());
-                return false;
+                $(".xiding")
+                .stop(true)
+                .animate({
+                    height:"0"
+                },500)
+                .css({
+                  "opacity":"0"
+                })
+
             }
             if($(document).scrollTop()>=topnum){
-                console.log(2);
-                $(".xiding").show();
                 $(".xiding")
+                .stop(true)
                 .animate({
-                    "height":"60"
+                    height:"60px"
                 },500)
+                .css({
+                  "opacity":"1"
+                })
             }
         })
 
@@ -150,3 +157,23 @@ var mySwiper = new Swiper('.swiper-container', {
             "scrollTop":0
           },500)
       })
+
+      // 左侧菜单
+      var Topzhi = 700;
+        $(document).scroll(()=>{
+            if($(document).scrollTop()<Topzhi){
+                $(".Leftnav")
+                .stop(true)
+                .animate({
+                  "opacity":"0"
+                },200)
+            }
+            if($(document).scrollTop()>=Topzhi){
+                $(".Leftnav")
+                .stop(true)
+                .animate({
+                  "opacity":"1"
+                },200)
+                console.log($(document).scrollTop())
+            }
+        })
