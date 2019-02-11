@@ -1,0 +1,51 @@
+{
+    "title":"现代简约 樱桃色 橡胶木 1.0米折叠台",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/29one.jpg!small",
+            "two" : "",
+            "thr" : "",
+            "fou" : "",
+            "fiv" : ""
+        },
+        "max" : {
+            "one" : "../img/xiangqing/29one.jpg!max",
+            "two" : "",
+            "thr" : "",
+            "fou" : "",
+            "fiv" : ""
+        }
+    },
+    "price" : "￥1380.00",
+    "youhui" : "￥1200",
+    "scprice" : "￥2580.00",
+    "suc" : "569",
+    "gen" : {
+        "type" : {
+            "one" : "折叠餐桌",
+            "two" : "",
+            "thr" : "",
+            "fou" : "",
+            "fiv" : "",
+            "six" : "",
+            "sev" : ""
+        },
+        "guige" : {
+            "one" : "1.0米",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "caizhi" : "板式+实木",
+        "color" : "樱桃色"
+    }
+}

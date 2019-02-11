@@ -1,0 +1,38 @@
+{
+    "title":"品格人生 现代简约 浅胡桃色 米纳米浮雕板 1.5米床",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/46one.jpg!small",
+            "two" : "../img/xiangqing/46two.jpg!small",
+            "thr" : "../img/xiangqing/46thr.jpg!small",
+            "fou" : "../img/xiangqing/46fou.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/46one.jpg!max",
+            "two" : "../img/xiangqing/46two.jpg!max",
+            "thr" : "../img/xiangqing/46thr.jpg!max",
+            "fou" : "../img/xiangqing/46fou.jpg!max"
+        }
+    },
+    "price" : "￥1180.00",
+    "youhui" : "￥1710",
+    "scprice" : "￥2890.00",
+    "suc" : "455",
+    "gen" : {
+        "type" : {
+            "one" : "双人床"
+        },
+        "guige" : "平板床",
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "neijing" : {
+            "one" : "1.5*1.9米",
+            "two" : "1.8*2.0米"
+        },
+        "caizhi" : "板式+实木",
+        "fangxiang" : "无抽屉",
+        "color" : "浅胡桃色"
+    }
+}

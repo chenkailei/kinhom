@@ -1,0 +1,40 @@
+{
+    "title":"现代简约 米白色+胡桃色 大理石+实木+中纤板 地柜",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/51one.jpg!small",
+            "two" : "../img/xiangqing/51two.jpg!small",
+            "thr" : "../img/xiangqing/51thr.jpg!small",
+            "fou" : "../img/xiangqing/51fou.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/51one.jpg!max",
+            "two" : "../img/xiangqing/51two.jpg!max",
+            "thr" : "../img/xiangqing/51thr.jpg!max",
+            "fou" : "../img/xiangqing/51fou.jpg!max"
+        }
+    },
+    "price" : "￥2850.00",
+    "youhui" : "￥2850",
+    "scprice" : "￥5700.00",
+    "suc" : "18",
+    "gen" : {
+        "type" : {
+            "one" : "地柜"
+        },
+        "guige" : {
+            "one" : "2.0米"
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "caizhi" : "板式+实木",
+        "color" : "米白色+胡桃色"
+    }
+}

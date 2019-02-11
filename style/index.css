@@ -198,6 +198,7 @@ img{
     line-height: 48px;
     text-align: center;
     color: #99918b;
+    cursor: pointer;
 }
 .Leftnav .active{
     color: #f60;
@@ -555,6 +556,18 @@ img{
     width: 290px;
     height: 193px;
     margin-top: 10px;
+    position: relative;
+}
+.storeright ul li span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 11px;
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    text-align: right;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0) 58%);
 }
 .storeright ul li:nth-child(1){
     margin-top: 0;

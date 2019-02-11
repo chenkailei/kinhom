@@ -1,0 +1,34 @@
+{
+    "title":"现代简约 金胡桃木 板木 卧房套装五件套（1.5米床+床头柜+衣柜+妆台+妆凳）",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/001one.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/001one.jpg!max"
+        }
+    },
+    "price" : "￥4882.00",
+    "youhui" : "￥4882",
+    "scprice" : "￥9764.00",
+    "suc" : "1",
+    "gen" : {
+        "type" : {
+            "one" : "卧房5件套"
+        },
+        "guige" : {
+            "one" : "配1.5*1.9米床"
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "caizhi" : "板式",
+        "color" :"金胡桃色"
+    }
+}

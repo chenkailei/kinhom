@@ -1,0 +1,40 @@
+{
+    "title":"现代简约 米白+黑色 钢化玻璃 电视柜",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/53one.jpg!small",
+            "two" : "../img/xiangqing/53two.jpg!small",
+            "thr" : "../img/xiangqing/53thr.jpg!small",
+            "fou" : "../img/xiangqing/53fou.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/53one.jpg!max",
+            "two" : "../img/xiangqing/53two.jpg!max",
+            "thr" : "../img/xiangqing/53thr.jpg!max",
+            "fou" : "../img/xiangqing/53fou.jpg!max"
+        }
+    },
+    "price" : "￥1980.00",
+    "youhui" : "￥1980",
+    "scprice" : "￥3960.00",
+    "suc" : "494",
+    "gen" : {
+        "type" : {
+            "one" : "电视柜"
+        },
+        "guige" : {
+            "one" : "1.9米"
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "caizhi" : "钢化玻璃",
+        "color" : "米白+黑色"
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "title":"现代简约 橙色 真皮 沙发（1+3+贵）面右贵妃",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/27one.jpg!small",
+            "two" : "../img/xiangqing/27two.jpg!small",
+            "thr" : "../img/xiangqing/27thr.jpg!small",
+            "fou" : "../img/xiangqing/27fou.jpg!small",
+            "fiv" : ""
+        },
+        "max" : {
+            "one" : "../img/xiangqing/27one.jpg!max",
+            "two" : "../img/xiangqing/27two.jpg!max",
+            "thr" : "../img/xiangqing/27thr.jpg!max",
+            "fou" : "../img/xiangqing/27fou.jpg!max",
+            "fiv" : ""
+        }
+    },
+    "price" : "￥28472.00",
+    "youhui" : "￥0",
+    "scprice" : "￥28472.00",
+    "suc" : "865",
+    "gen" : {
+        "type" : {
+            "one" : "3+贵妃",
+            "two" : "单人位",
+            "thr" : "1+3+贵妃",
+            "fou" : "",
+            "fiv" : "",
+            "six" : "",
+            "sev" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "真皮",
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "guige" : {
+            "one" : "面右贵妃位",
+            "two" : "无扶手",
+            "thr" : "面左贵妃位"
+        },
+        "color" : "橙色"
+    }
+}

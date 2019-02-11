@@ -1,0 +1,44 @@
+{
+    "title":"快乐魔方 现代简约 原木色 松木 分体子母床（上床0.9米，下床1.2米）（不含床下抽）",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/48one.jpg!small",
+            "two" : "../img/xiangqing/48two.jpg!small",
+            "thr" : "../img/xiangqing/48thr.jpg!small",
+            "fou" : "../img/xiangqing/48fou.jpg!small",
+            "fiv" : "../img/xiangqing/48fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/48one.jpg!max",
+            "two" : "../img/xiangqing/48two.jpg!max",
+            "thr" : "../img/xiangqing/48thr.jpg!max",
+            "fou" : "../img/xiangqing/48fou.jpg!max",
+            "fiv" : "../img/xiangqing/48fiv.jpg!max"
+        }
+    },
+    "price" : "￥3270.00",
+    "youhui" : "￥3270",
+    "scprice" : "￥6540.00",
+    "suc" : "1151",
+    "gen" : {
+        "type" : {
+            "one" : "组合床",
+            "two" : "双层床"
+        },
+        "peijian" : {
+            "one" : "含床下抽",
+            "two" : "不含床下抽"
+        },
+        "guige" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "上床: 0.9*1.9米,  下床: 1.2*1.9米",
+            "two" : "上床: 1.2*1.9米,  下床: 1.5*1.9米"
+        },
+        "caizhi" : "实木",
+        "color" : "原木色"
+    }
+}

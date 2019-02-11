@@ -1,0 +1,36 @@
+{
+    "title":"现代简约 图片色 高密度中纤板+实木 地柜",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/52one.jpg!small",
+            "two" : "../img/xiangqing/52two.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/52one.jpg!max",
+            "two" : "../img/xiangqing/52two.jpg!max"
+        }
+    },
+    "price" : "￥1900.00",
+    "youhui" : "￥1900",
+    "scprice" : "￥3800.00",
+    "suc" : "9",
+    "gen" : {
+        "type" : {
+            "one" : "地柜"
+        },
+        "guige" : {
+            "one" : "1.3米"
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "caizhi" : "板式+实木",
+        "color" : "样板色"
+    }
+}

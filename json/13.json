@@ -1,0 +1,51 @@
+{
+    "title":"温柔情怀 现代简约 白色 整网弹簧+天然乳胶床垫（1.5*1.9）",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/13one.jpg!small",
+            "two" : "../img/xiangqing/13two.jpg!small",
+            "thr" : "../img/xiangqing/13thr.jpg!small",
+            "fou" : "../img/xiangqing/13fou.jpg!small",
+            "fiv" : "../img/xiangqing/13fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/13one.jpg!max",
+            "two" : "../img/xiangqing/13two.jpg!max",
+            "thr" : "../img/xiangqing/13thr.jpg!max",
+            "fou" : "../img/xiangqing/13fou.jpg!max",
+            "fiv" : "../img/xiangqing/13fiv.jpg!max"
+        }
+    },
+    "price" : "￥4200.00",
+    "youhui" : "￥0",
+    "scprice" : "￥4200.00",
+    "suc" : "714",
+    "gen" : {
+        "type" : {
+            "one" : "1.5*2.0米",
+            "two" : "0.9*1.9米",
+            "thr" : "1.2*1.9米",
+            "fou" : "1.5*1.9米",
+            "fiv" : "1.8*2.0米",
+            "six" : "1.0*1.9米",
+            "sev" : "1.2*2.0米"
+        },
+        "guige" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "caizhi" : "整网弹簧+天然乳胶",
+        "houdu" : "22cm",
+        "color" : "白色"
+    }
+}

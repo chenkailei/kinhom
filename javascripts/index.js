@@ -1,4 +1,12 @@
-
+// 顶部菜单
+$(".navlist li").on("mouseenter",(e) =>{
+  // console.log(1);
+var target = e.currentTarget;
+var index = $(target).index();
+//   console.log($(target).index());
+$(".navlist li a").removeClass("liactive")
+.eq(index).addClass("liactive")
+})
 
 
 // banner图
@@ -174,6 +182,59 @@ var mySwiper = new Swiper('.swiper-container', {
                 .animate({
                   "opacity":"1"
                 },200)
-                console.log($(document).scrollTop())
+                // console.log($(document).scrollTop())
             }
         })
+
+        class Stair{
+            constructor(){
+
+            }
+            init(){
+                this.stairs = $(".stairs");
+                this.btns = $(".Leftnav li");
+                this.stairsArray = [];
+                for(var i = 0;i < this.stairs.length;i++){
+                    var ele = this.stairs.eq(i)
+                    this.stairsArray.push({
+                        min : ele.offset().top,
+                        max : ele.offset().top + ele.height()
+                    })
+                }
+                // console.log(this.stairsArray)
+                this.bindEvent();
+            }
+            bindEvent(){
+              $(window).on("scroll",this.changeIndex.bind(this));
+              this.btns.on("click",this.changeStairs.bind(this));
+            }
+
+            changeIndex(){
+              if(this.animate){
+                return false;
+              }
+              let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+              this.stairsArray.some((item,index)=>{
+                if(scrollTop >= item.min && scrollTop < item.max){
+                  this.btns.removeClass("active")
+                  .eq(index).addClass("active");
+                }
+              })
+            }
+
+            changeStairs(e){
+              var target = e.currentTarget;
+              // console.log($(target).index());
+              var index = $(target).index();
+              this.btns.removeClass("active")
+                .eq(index).addClass("active");
+              $("html,body").animate({
+                "scrollTop" : this.stairsArray[index].min
+              },() =>{
+                  this.animate = false;
+              })
+              this.animate = true;
+            }
+        }
+        var stair = new Stair();
+        stair.init();
