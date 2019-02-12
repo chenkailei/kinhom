@@ -1,0 +1,54 @@
+{
+    "title":"软硬两用 白色提花 高碳素6环弹簧+1.5CM3D椰棕 金海马相伴一生床垫（1.5*1.9）",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/64one.jpg!small",
+            "two" : "../img/xiangqing/64two.jpg!small",
+            "thr" : "../img/xiangqing/64thr.jpg!small",
+            "fou" : "../img/xiangqing/64fou.jpg!small",
+            "fiv" : "../img/xiangqing/64fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/64one.jpg!max",
+            "two" : "../img/xiangqing/64two.jpg!max",
+            "thr" : "../img/xiangqing/64thr.jpg!max",
+            "fou" : "../img/xiangqing/64fou.jpg!max",
+            "fiv" : "../img/xiangqing/64fiv.jpg!max"
+        }
+    },
+    "price" : "￥5340.00",
+    "youhui" : "￥0",
+    "scprice" : "￥5340.00",
+    "suc" : "19953",
+    "gen" : {
+        "type" : {
+            "one" : "1.5*2.0米",
+            "two" : "0.9*1.9米",
+            "thr" : "1.2*1.9米",
+            "fou" : "1.5*1.9米",
+            "fiv" : "1.8*2.0米",
+            "six" : "1.0*1.9米",
+            "sev" : "1.2*2.0米"
+        },
+        "guige" : {
+            "one" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "21cm",
+        "caizhi" : "整网弹簧",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "白色提花",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

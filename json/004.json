@@ -1,0 +1,46 @@
+{
+    "title":"现代简约 蓝色 环保E1密度板吸塑工艺 1.2m组合床(拖床另计)",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/004one.jpg!small",
+            "two" : "../img/xiangqing/004two.jpg!small",
+            "thr" : "../img/xiangqing/004thr.jpg!small",
+            "fou" : "../img/xiangqing/004fou.jpg!small",
+            "fiv" : "../img/xiangqing/004fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/004one.jpg!max",
+            "two" : "../img/xiangqing/004two.jpg!max",
+            "thr" : "../img/xiangqing/004thr.jpg!max",
+            "fou" : "../img/xiangqing/004fou.jpg!max",
+            "fiv" : "../img/xiangqing/004fiv.jpg!max"
+        }
+    },
+    "price" : "￥6360.00",
+    "youhui" : "￥0",
+    "scprice" : "￥6360.00",
+    "suc" : "17",
+    "gen" : {
+        "type" : {
+            "one" : "组合床"
+        },
+        "guige" : {
+            "one" : "配1.5*1.9米气动床"
+        },
+        "neijing" : {
+            "one" : "1.2*1.9米",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "无",
+            "two" : ""
+        },
+        "caizhi" : "板式",
+        "color" :{
+            "one" : "蓝色",
+            "two" : "绿色",
+            "thr" : "粉色"
+        }
+    }
+}

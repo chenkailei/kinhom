@@ -1,0 +1,42 @@
+{
+    "title":"特卖 办公家具 现代简约 样板色 优质PU西皮 休闲躺椅",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/80one.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/80one.jpg!max"
+        }
+    },
+    "price" : "￥2180.00",
+    "youhui" : "￥0",
+    "scprice" : "￥2180.00",
+    "suc" : "36",
+    "gen" : {
+        "type" : {
+            "one" : "职工椅"
+        },
+        "guige" : {
+            "one" : "无",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "皮质",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "样板色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

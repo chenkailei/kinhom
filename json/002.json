@@ -1,0 +1,40 @@
+{
+    "title":"现代简约 样板色 二层皮 150*190持平大边(汽动面右抽屉床架)+针织床垫",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/002one.jpg!small",
+            "two" : "../img/xiangqing/002two.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/002one.jpg!max",
+            "two" : "../img/xiangqing/002two.jpg!max"
+        }
+    },
+    "price" : "￥5260.00",
+    "youhui" : "￥5260",
+    "scprice" : "￥10520.00",
+    "suc" : "0",
+    "gen" : {
+        "type" : {
+            "one" : "卧房2件套"
+        },
+        "guige" : {
+            "one" : "配1.5*1.9米气动床"
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "caizhi" : "床+床垫",
+        "color" :{
+            "one" : "样板色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

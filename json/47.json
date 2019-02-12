@@ -27,6 +27,10 @@
         },
         "caizhi" : "实木颗粒板",
         "fangxiang" : "无抽屉",
-        "color" : "白枫色"
+        "color" : {
+            "one" : "白枫色",
+            "two" : "",
+            "thr" : ""
+        }
     }
 }

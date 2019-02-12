@@ -1,0 +1,42 @@
+{
+    "title":"现代简约 米白色+胡桃色 大理石+实木+中纤板 客厅套装（茶几+地柜） ",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/69one.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/69one.jpg!max"
+        }
+    },
+    "price" : "￥5530.00",
+    "youhui" : "￥5530",
+    "scprice" : "￥11060.00",
+    "suc" : "2",
+    "gen" : {
+        "type" : {
+            "one" : "茶几+地柜/电视柜"
+        },
+        "guige" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "中纤板",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "米白",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

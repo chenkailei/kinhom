@@ -1,0 +1,42 @@
+{
+    "title":"办公家具 现代简约 黑+绿 网布 电脑椅",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/79one.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/79one.jpg!max"
+        }
+    },
+    "price" : "￥289.00",
+    "youhui" : "￥0",
+    "scprice" : "￥289.00",
+    "suc" : "368",
+    "gen" : {
+        "type" : {
+            "one" : "职工椅"
+        },
+        "guige" : {
+            "one" : "单人位",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "网布",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "样板色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

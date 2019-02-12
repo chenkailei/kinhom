@@ -37,6 +37,10 @@
         },
         "caizhi" : "实木",
         "fangxiang" : "无抽屉",
-        "color" : "原木色"
+        "color" : {
+            "one" : "原木色",
+            "two" : "",
+            "thr" : ""
+        }
     }
 }

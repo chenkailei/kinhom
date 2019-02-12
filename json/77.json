@@ -1,0 +1,50 @@
+{
+    "title":"办公家具 现代简约 红杉木纹配纯白色 三聚氰胺板 对向两人位屏风",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/77one.jpg!small",
+            "two" : "../img/xiangqing/77two.jpg!small",
+            "thr" : "../img/xiangqing/77thr.jpg!small",
+            "fou" : "../img/xiangqing/77fou.jpg!small",
+            "fiv" : "../img/xiangqing/77fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/77one.jpg!max",
+            "two" : "../img/xiangqing/77two.jpg!max",
+            "thr" : "../img/xiangqing/77thr.jpg!max",
+            "fou" : "../img/xiangqing/77fou.jpg!max",
+            "fiv" : "../img/xiangqing/77fiv.jpg!max"
+        }
+    },
+    "price" : "￥2089.00",
+    "youhui" : "￥0",
+    "scprice" : "￥2089.00",
+    "suc" : "302",
+    "gen" : {
+        "type" : {
+            "one" : "对向二人位"
+        },
+        "guige" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "板式",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "红衫木配纯白色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

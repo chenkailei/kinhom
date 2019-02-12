@@ -1,0 +1,42 @@
+{
+    "title":"办公家具 现代简约 黑背/灰座 网布+30#密度海棉+电镀 小班椅 ",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/78one.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/78one.jpg!max"
+        }
+    },
+    "price" : "￥489.00",
+    "youhui" : "￥0",
+    "scprice" : "￥489.00",
+    "suc" : "34",
+    "gen" : {
+        "type" : {
+            "one" : "职工椅"
+        },
+        "guige" : {
+            "one" : "无",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "网布",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "样板色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

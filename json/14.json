@@ -1,0 +1,50 @@
+{
+    "title":"现代简约 灰青色 细麻布+实木架 转角布艺沙发组合1+3+贵（坐下右贵妃）",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/14one.jpg!small",
+            "two" : "../img/xiangqing/14two.jpg!small",
+            "thr" : "../img/xiangqing/14thr.jpg!small",
+            "fou" : "../img/xiangqing/14fou.jpg!small",
+            "fiv" : "../img/xiangqing/14fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/14one.jpg!max",
+            "two" : "../img/xiangqing/14two.jpg!max",
+            "thr" : "../img/xiangqing/14thr.jpg!max",
+            "fou" : "../img/xiangqing/14fou.jpg!max",
+            "fiv" : "../img/xiangqing/14fiv.jpg!max"
+        }
+    },
+    "price" : "￥4680.00",
+    "youhui" : "￥4680",
+    "scprice" : "￥9360.00",
+    "suc" : "70",
+    "gen" : {
+        "type" : {
+            "one" : "1+3+贵妃",
+            "two" : "3+贵妃"
+        },
+        "guige" : {
+            "one" : "坐下右",
+            "two" : "坐下左",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "caizhi" : "布艺",
+        "houdu" : "",
+        "color" : {
+            "one" : "样板色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

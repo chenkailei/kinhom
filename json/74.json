@@ -1,0 +1,42 @@
+{
+    "title":"办公家具 现代简约 浅黄胡桃色 中纤板 哥麦系列现代木皮大班台",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/74one.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/74one.jpg!max"
+        }
+    },
+    "price" : "￥4080.00",
+    "youhui" : "￥0",
+    "scprice" : "￥4080.00",
+    "suc" : "17",
+    "gen" : {
+        "type" : {
+            "one" : "办公桌"
+        },
+        "guige" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "中纤板+木皮",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "浅黄胡桃色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

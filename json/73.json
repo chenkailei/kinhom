@@ -1,0 +1,50 @@
+{
+    "title":"现代简约 卡其色 实木 餐椅套装（一桌四椅）",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/73one.jpg!small",
+            "two" : "../img/xiangqing/73two.jpg!small",
+            "thr" : "../img/xiangqing/73thr.jpg!small",
+            "fou" : "../img/xiangqing/73fou.jpg!small",
+            "fiv" : "../img/xiangqing/73fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/73one.jpg!max",
+            "two" : "../img/xiangqing/73two.jpg!max",
+            "thr" : "../img/xiangqing/73thr.jpg!max",
+            "fou" : "../img/xiangqing/73fou.jpg!max",
+            "fiv" : "../img/xiangqing/73fiv.jpg!max"
+        }
+    },
+    "price" : "￥3667.00",
+    "youhui" : "￥4453",
+    "scprice" : "￥8120.00",
+    "suc" : "15",
+    "gen" : {
+        "type" : {
+            "one" : "1桌4椅"
+        },
+        "guige" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "实木",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "卡其色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

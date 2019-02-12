@@ -1,0 +1,50 @@
+{
+    "title":"现代简约 米白+黑色 钢化玻璃 客厅两件套（茶几+地柜/电视柜）",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/71one.jpg!small",
+            "two" : "../img/xiangqing/71two.jpg!small",
+            "thr" : "../img/xiangqing/71thr.jpg!small",
+            "fou" : "../img/xiangqing/71fou.jpg!small",
+            "fiv" : "../img/xiangqing/71fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/71one.jpg!max",
+            "two" : "../img/xiangqing/71two.jpg!max",
+            "thr" : "../img/xiangqing/71thr.jpg!max",
+            "fou" : "../img/xiangqing/71fou.jpg!max",
+            "fiv" : "../img/xiangqing/71fiv.jpg!max"
+        }
+    },
+    "price" : "￥3760.00",
+    "youhui" : "￥3760",
+    "scprice" : "￥7520.00",
+    "suc" : "300",
+    "gen" : {
+        "type" : {
+            "one" : "茶几+地柜/电视柜"
+        },
+        "guige" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "钢化玻璃",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "米白+黑色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

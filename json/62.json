@@ -1,0 +1,47 @@
+{
+    "title":"现代简约 白+灰 实木+高密度海绵+高档棉麻面料 布艺软床(可搭配中端智能床垫)1.8*2.0",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/62one.jpg!small",
+            "two" : "../img/xiangqing/62two.jpg!small",
+            "thr" : "../img/xiangqing/62thr.jpg!small",
+            "fou" : "../img/xiangqing/62fou.jpg!small",
+            "fiv" : "../img/xiangqing/62fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/62one.jpg!max",
+            "two" : "../img/xiangqing/62two.jpg!max",
+            "thr" : "../img/xiangqing/62thr.jpg!max",
+            "fou" : "../img/xiangqing/62fou.jpg!max",
+            "fiv" : "../img/xiangqing/62fiv.jpg!max"
+        }
+    },
+    "price" : "￥7138.00",
+    "youhui" : "￥0",
+    "scprice" : "￥7138.00",
+    "suc" : "1",
+    "gen" : {
+        "type" : {
+            "one" : "双人床"
+        },
+        "guige" : {
+            "one" : "榻榻米床"
+        },
+        "neijing" : {
+            "one" : "1.5*1.9米",
+            "two" : "1.8*2.0米",
+            "thr" : "1.5*2.0米"
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "caizhi" : "布艺",
+        "fangxaing" : "无抽屉",
+        "color" : {
+            "one" : "白+灰",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "title":"现代简约 白枫色 实木颗粒板双人大床 1.8*2.0米 ",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/25one.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/25one.jpg!max"
+        }
+    },
+    "price" : "￥28472.00",
+    "youhui" : "￥0",
+    "scprice" : "￥28472.00",
+    "suc" : "865",
+    "gen" : {
+        "type" : {
+            "one" : "双人床"
+        },
+        "houdu" : "",
+        "caizhi" : "实木颗粒板",
+        "neijing" : {
+            "one" : "1.8*2.0米",
+            "two" : "1.5*1.9米",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "guige" : {
+            "one" : "平板床"
+        },
+        "fangxiang": "无抽屉",
+        "color" : {
+            "one" : "白枫色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "title":"现代简约 卡其色 中纤板贴黑胡桃木皮 客餐厅套餐（茶几+地柜+一桌四椅）",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/72one.jpg!small",
+            "two" : "../img/xiangqing/72two.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/72one.jpg!max",
+            "two" : "../img/xiangqing/72two.jpg!max"
+        }
+    },
+    "price" : "￥7027.00",
+    "youhui" : "￥7333",
+    "scprice" : "￥14360.00",
+    "suc" : "1",
+    "gen" : {
+        "type" : {
+            "one" : "茶几+地柜/电视柜+餐桌椅"
+        },
+        "guige" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "中纤板",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "卡其色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "title":"现代简约 浅色 布艺 转角布艺3+贵妃(坐下左贵妃) ",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/68one.jpg!small",
+            "two" : "../img/xiangqing/68two.jpg!small",
+            "thr" : "../img/xiangqing/68thr.jpg!small",
+            "fou" : "../img/xiangqing/68fou.jpg!small",
+            "fiv" : "../img/xiangqing/68fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/68one.jpg!max",
+            "two" : "../img/xiangqing/68two.jpg!max",
+            "thr" : "../img/xiangqing/68thr.jpg!max",
+            "fou" : "../img/xiangqing/68fou.jpg!max",
+            "fiv" : "../img/xiangqing/68fiv.jpg!max"
+        }
+    },
+    "price" : "￥3680.00",
+    "youhui" : "￥3680",
+    "scprice" : "￥7360.00",
+    "suc" : "1106",
+    "gen" : {
+        "type" : {
+            "one" : "3+贵妃"
+        },
+        "guige" : {
+            "one" : "坐下左",
+            "two" : "坐下右",
+            "thr" : ""
+        },
+        "neijing" : {
+            "one" : "",
+            "two" : "",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "houdu" : "",
+        "caizhi" : "布艺",
+        "fangxaing" : "",
+        "color" : {
+            "one" : "浅色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}

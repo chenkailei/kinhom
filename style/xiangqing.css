@@ -277,6 +277,7 @@ img{
 }
 .xiangqing ul li img{
     width: 100%;
+    height: 100%;;
 }
 .rignav{
     position: fixed;
@@ -330,11 +331,13 @@ img{
     opacity: 1;
 }
 .xiangqing .right{
+    width: 610px;
     height: 430px;
     float: right;
 }
 .right h6{
-    height: 25px;
+    min-height: 25px;
+    overflow: hidden;
     font-size: 16px;
     color: #333;
 }

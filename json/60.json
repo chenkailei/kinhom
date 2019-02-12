@@ -1,0 +1,47 @@
+{
+    "title":"温暖世界 现代简约 原木色 榉木 1.5米双人大床",
+    "imgurl":{
+        "min" : {
+            "one" : "../img/xiangqing/60one.jpg!small",
+            "two" : "../img/xiangqing/60two.jpg!small",
+            "thr" : "../img/xiangqing/60thr.jpg!small",
+            "fou" : "../img/xiangqing/60fou.jpg!small",
+            "fiv" : "../img/xiangqing/60fiv.jpg!small"
+        },
+        "max" : {
+            "one" : "../img/xiangqing/60one.jpg!max",
+            "two" : "../img/xiangqing/60two.jpg!max",
+            "thr" : "../img/xiangqing/60thr.jpg!max",
+            "fou" : "../img/xiangqing/60fou.jpg!max",
+            "fiv" : "../img/xiangqing/60fiv.jpg!max"
+        }
+    },
+    "price" : "￥2350.00",
+    "youhui" : "￥3410",
+    "scprice" : "￥5760.00",
+    "suc" : "1014",
+    "gen" : {
+        "type" : {
+            "one" : "双人床"
+        },
+        "guige" : {
+            "one" : "平板床"
+        },
+        "neijing" : {
+            "one" : "1.5*1.9米",
+            "two" : "1.8*2.0米",
+            "thr" : ""
+        },
+        "peijian" : {
+            "one" : "",
+            "two" : ""
+        },
+        "caizhi" : "实木",
+        "fangxaing" : "无抽屉",
+        "color" : {
+            "one" : "原木色",
+            "two" : "",
+            "thr" : ""
+        }
+    }
+}
