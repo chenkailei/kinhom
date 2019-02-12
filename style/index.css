@@ -21,6 +21,15 @@ img{
     width: 1190px;
     height: 96px;
     margin: 0 auto;
+    position: relative;
+}
+.head .welcome{
+    width: 150px; 
+    float: left;
+    height: 100%;
+    line-height: 96px;
+    color: #4c4846;
+    font-family: "宋体";
 }
 .rightlogo{
     margin-left: 60px;
@@ -37,6 +46,37 @@ img{
     width: 340px;
     height: 40px;
     position: relative;
+}
+.head .login,.head .sign{
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 10px;
+    width: 30px;
+    height: 100%;
+    line-height: 96px;
+    float: left;
+    color: #99918b;
+}
+.head .name,.head .out{
+    color: #f60;
+    position: absolute;
+    top: 37px;
+    right: 90px;
+}
+.head .name{
+    color: #f00;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+.head .out{
+    top: 40px;
+    right: 30px;
+    color: #807974;
+    font-size: 12px;
+}
+.head .login{
+    color: #f60;
+    margin-left: 150px;
 }
 .lis{
     position: absolute;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人注册</title>
+    <link rel="shortcut icon" href="../img/idnex/ico.ico">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/zhuce.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <div class="container" style="box-shadow:1px 1px 1px #000">
+        <div class="head">
+            <!-- logo -->
+            <div class="logo">
+                <a href="">
+                    <img src="../img/idnex/img (1).jpg" alt="">
+                </a>
+                <a class="rightlogo" href="">
+                    <img src="../img/idnex/img (2).jpg" alt="">
+                </a>
+            </div>
+            <h2 class="welcome">欢迎注册</h2>
+            <p>已有账号?<a  href="http://localhost/kinhom/html/login.html">去登录</a> </p>
+        </div>
+        
+    </div>
+    <form class="zhuce">
+            <span onselectstart="return false">用户名:</span> <input id="uninput" type="text" placeholder="3-10位字母或数字"><span id="cored">*</span> <span class="Unerror">用户名格式不正确</span> <br>
+            <span onselectstart="return false">邮箱:</span> <input id="Eminput" type="text" placeholder="请输入邮箱(可选)"> <span class="Emerror">邮箱格式不正确</span> <br>
+            <span onselectstart="return false">密码:</span> <input id="Pwinput" type="password" placeholder="3-10位数字或字母"><span id="cored">*</span> <span class="Pwerror">密码格式不正确</span> <br>
+            <span onselectstart="return false">确认密码:</span> <input id="QPwinput" type="password" placeholder="确认密码"><span id="cored">*</span> <span class="QPwerror">两次密码不一致</span> <br>
+            <span style="float:left" onselectstart="return false">验证码:</span>    <input  type="text" id="yanzhengma" > <span class="Yzerror">验证码错误</span>
+            <div class="box" onselectstart="return false"></div><h6 class="huan" onselectstart="return false">换一换</h6><br>
+            <button type="button" class="tijiao">注册</button>
+            <a class="backindex" href="../index.html">返回首页</a>
+    </form>
+</body>
+
+<script src="../javascripts/zhuce.js"></script>
+</html>

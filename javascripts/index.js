@@ -8,7 +8,25 @@ $(".navlist li a").removeClass("liactive")
 .eq(index).addClass("liactive")
 })
 
-
+// 用户名
+    
+    $(window).ready(()=>{
+      var num = location.hash;
+      var xm= num.replace("#","");
+      // console.log(xm);
+      $(".name").html(xm);
+      if($(".name").html()!== ""){
+        $(".login").hide();
+        $(".sign").hide();
+        $(".out").show();
+      }
+      if($(".name").html() == ""){
+        $(".login").show();
+        $(".sign").show();
+        $(".out").hide();
+      }
+    })
+    
 // banner图
 var mySwiper = new Swiper('.swiper-container', {
     autoplay: true,//可选选项，自动滑动
