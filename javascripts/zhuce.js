@@ -33,9 +33,11 @@ $(".tijiao").on("click",(e)=>{
     var QPwval = $("#QPwinput").val();
     var Yzval = $("#yanzhengma").val();
     var Yzm = $(".box").html();
+    var data ={};
     var Unval_reg = /^[0-9a-zA-Z]{3,11}$/;
     var Em_reg = /^\w{1,20}@[a-z0-9]{2,6}\.[a-z]{2,5}$/;
     var Unsty,Emsty,Pwsty,QPwsty,Yzsty;
+    var cookie = null;
     if(Unval_reg.test(Unval) && Unval !== ""){
         $(".Unerror").hide();
         Unsty = true;
@@ -72,7 +74,7 @@ $(".tijiao").on("click",(e)=>{
         Yzsty = false;
     }
     if(Yzsty == true && QPwsty == true && Pwsty == true && Emsty == true && Unsty == true){
-        var data = {
+        data = {
             username : Unval,
             Email : Emval,
             password : Pwval
@@ -82,8 +84,8 @@ $(".tijiao").on("click",(e)=>{
         $("#Pwinput").val("");
          $("#QPwinput").val("");
         $("#yanzhengma").val("");
-        console.log(data.username);
-        var indexurl = `../index.html#${data.username}`
+        // console.log(data.username);
+        
         ajaxPost("../php/sign.php",data)
         .then((res) =>{
             // console.log(res);
@@ -92,7 +94,32 @@ $(".tijiao").on("click",(e)=>{
             // var succ = dataObj.state;
             if(dataObj.state == "success"){
                 // console.log(注册成功);
-                window.location.href = indexurl;
+                    if(cookie = $.cookie("users")){
+                        var userlist = JSON.parse(cookie);
+                        
+                        userlist.some((item)=>{
+                            // console.log(data.username);
+                            // console.log(item.username);
+                            userlist = [
+                                {
+                                    "username" : data.username,
+                                    "password" : data.password
+                                }
+                            ]
+                        })
+                    }else if(!$.cookie("users")){
+                        var userlist = [
+                            {
+                                "username" : data.username,
+                                "password" : data.password
+                            }
+                        ]
+                        
+                        console.log("新创建");
+                    }
+                $.cookie("users",JSON.stringify(userlist));
+                console.log($.cookie("users"));
+                window.location.href = "../html/login.html";
             }
             if(dataObj.state == "error"){
                 alert(dataObj.errorType);
@@ -129,3 +156,4 @@ function ajaxPost(url,data){
 
               })
 }
+

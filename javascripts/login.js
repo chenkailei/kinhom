@@ -56,15 +56,15 @@ $(".tijiao").on("click",(e)=>{
             // var succ = dataObj.state;
             if(dataObj.state == "success"){
                 // console.log("登录成功");
-                window.location.href = indexurl;
+                var userlist = [
+                    {
+                        "username" : data.username,
+                        "password" : data.password
+                    }
+                ]
+                $.cookie("users",JSON.stringify(userlist));
+                window.location.href = "../html/index.html"
             }
-            // if(dataObj.state == "error"){
-            //     alert(dataObj.errorType);
-            // }
-            // $.ajax(res)
-            //  .then((ress)=>{
-            //     console.log(ress);
-            //  })
         });
         
     // }

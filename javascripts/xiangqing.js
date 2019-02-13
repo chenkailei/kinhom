@@ -52,6 +52,35 @@ function jsonp(url,jsonp_key){
         }
   }
 
+// 用户名
+    
+$(window).ready(()=>{
+    // console.log(1);
+    if(cookie = $.cookie("users")){
+      var cok = cookie = $.cookie("users")
+    //   console.log(JSON.parse(cok)[0].username);
+      var namevalue = JSON.parse(cok)[0].username;
+      $(".name").html(namevalue);
+    }
+    if($(".name").html()!== ""){
+      $(".login").hide();
+      $(".sign").hide();
+      $(".out").show();
+    }
+    if($(".name").html() == ""){
+      $(".login").show();
+      $(".sign").show();
+      $(".out").hide();
+    }
+  })
+// 退出账号
+  $(".out").on("click",()=>{
+    $.cookie("users","");
+    window.location.reload();
+  })
+
+
+
 //   顶部菜单
 $(".navlist li").on("mouseenter",(e) =>{
       // console.log(1);

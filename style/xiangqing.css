@@ -58,6 +58,9 @@ img{
 .lis li:hover{
     color: #f60;
 }
+.out{
+    cursor: pointer;
+}
 .puttxt{
     position: relative;
     padding: 5px 40px 5px 0;
@@ -304,6 +307,9 @@ img{
 }
 .rignav li:nth-child(2){
     background: #f60;
+}
+.rignav li:nth-child(3){
+    background:#99918b;
 }
 .app{
     width: 140px;

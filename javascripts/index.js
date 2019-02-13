@@ -11,10 +11,13 @@ $(".navlist li a").removeClass("liactive")
 // 用户名
     
     $(window).ready(()=>{
-      var num = location.hash;
-      var xm= num.replace("#","");
-      // console.log(xm);
-      $(".name").html(xm);
+      $.cookie("__cfduid","")
+      if(cookie = $.cookie("users")){
+        var cok = cookie = $.cookie("users")
+        // console.log(JSON.parse(cok)[0].username);
+        var namevalue = JSON.parse(cok)[0].username;
+        $(".name").html(namevalue);
+      }
       if($(".name").html()!== ""){
         $(".login").hide();
         $(".sign").hide();
@@ -26,9 +29,13 @@ $(".navlist li a").removeClass("liactive")
         $(".out").hide();
       }
     })
-    
+// 退出账号
+    $(".out").on("click",()=>{
+      $.cookie("users","")
+    })
 // banner图
 var mySwiper = new Swiper('.swiper-container', {
+    loop:true,
     autoplay: true,//可选选项，自动滑动
     effect : 'fade',
     navigation: {
@@ -39,13 +46,29 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable :true
     }
+});
+mySwiper.el.onmouseover = function(){ //鼠标放上暂停轮播
+  mySwiper.autoplay.stop();
+}
+mySwiper.el.onmouseleave = function(){
+  mySwiper.autoplay.start();
+};
+$(".swiper-container").on("mouseenter",()=>{
+  // console.log(1);
+  $(".swiper-button-prev").show();
+  $(".swiper-button-next").show();
+});
+$(".swiper-container").on("mouseleave",()=>{
+  // console.log(1);
+  $(".swiper-button-prev").hide();
+  $(".swiper-button-next").hide();
 })
 
 // banner图
 
 // 联动
         var json = null;
-        $.ajax("./json/position.json")
+        $.ajax("../json/position.json")
         .then((res)=>{
             // console.log(res);
             json = res;
