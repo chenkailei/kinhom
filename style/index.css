@@ -78,6 +78,25 @@ img{
     color: #f60;
     margin-left: 150px;
 }
+.shopcarbox{
+    position: absolute;
+    top: 37px;
+    right: 255px;
+    width: 100px;
+    color: #f00;
+    font-size: 16px;
+}
+.shopcarbox .shopcar{
+    color: #8c8c8c;
+    font-size: 18px;
+    font-family: "隶书";
+}
+.shopcar{
+    cursor: pointer;
+}
+.shopcarbox .shopcar:hover{
+    color: #f00;
+}
 .lis{
     position: absolute;
     top: 40px;

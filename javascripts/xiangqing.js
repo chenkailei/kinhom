@@ -166,9 +166,13 @@ $(".gotop").on("click",()=>{
         var onebigurl,twobigurl,thrbigurl,foubigurl,fivebigurl;
         var url = `../json/${xm}.json`;
         var arr = [];
+        var he = 0;
+        var she = 0;
+        var yuan = 0;
+        var id = 0 ;
         $.ajax(url)
             .then((res) =>{
-                // console.log(res.gen);
+                console.log(res.id);
                 for(var i in res.gen){
                     arr.push(res[i])
                 }
@@ -178,6 +182,12 @@ $(".gotop").on("click",()=>{
                 thrbigurl = res.imgurl.max.thr;
                 foubigurl = res.imgurl.max.fou;
                 fivbigurl = res.imgurl.max.fiv;
+                id = res.id;
+                console.log(id);
+                he = res.price.replace(/[^0-9,.]/ig,"");
+                she = res.scprice.replace(/[^0-9,.]/ig,"")-parseInt(he);
+                yuan = res.scprice.replace(/[^0-9,.]/ig,"");
+                // console.log(yuan);
                 // console.log(onebigurl);
                 $("#max").attr("src",res.imgurl.max.one);
                 $("#maxImg").attr("src",res.imgurl.max.one);
@@ -186,8 +196,11 @@ $(".gotop").on("click",()=>{
                 $("#thr").attr("src",res.imgurl.min.thr);
                 $("#fou").attr("src",res.imgurl.min.fou);
                 $("#fiv").attr("src",res.imgurl.min.fiv);
+                $("#dpimg").attr("src",res.imgurl.min.one);
                 $("#title").html(res.title);
+                $("#dptit").html(res.title);
                 $(".pri").html(res.price);
+                $(".dpleft .dpprice").html(res.price);
                 $(".youhui").html(res.youhui);
                 $(".shichang").html(res.scprice);
                 $(".shou").html(res.suc);
@@ -352,3 +365,103 @@ $(".gotop").on("click",()=>{
     }
     var xq = new XQ();
     xq.init();
+
+
+
+    // 搭配
+
+    class Dp{
+        constructor(){
+
+        }
+        init(){
+            this.index = 0;
+            this.bindEvent();
+        }
+        bindEvent(){
+            $(".dpnac a").on("click",this.changeIndex.bind(this));
+            $(".dpnac a").on("click",this.changePage.bind(this));
+        }
+        changeIndex(e){
+            var target = e.currentTarget;
+            // console.log($(target).index());
+            this.index = $(target).index();
+            $(".dpnac a").removeClass("active")
+                .eq(this.index).addClass("active");
+        }
+        changePage(){
+            console.log(this.index);
+            $(".box>div").removeClass("active")
+                .eq(this.index).addClass("active");
+        }
+    }
+    var dp = new Dp();
+    dp.init();
+
+
+    var checknum = 0;
+    var arr = [];
+    var zt = false;
+    var jia ;
+    // console.log($('#like').nextAll().html());
+    $(".dpcent .cent").on("click",(e)=>{
+        var target = e.currentTarget;
+        // console.log($(target).children()[2].checked);
+        zt = $(target).children()[2].checked;
+        // console.log(zt);
+            he = parseInt(he);
+            she = parseInt(she);
+            yuan = parseInt(yuan);
+        if(zt === true){
+            // console.log($(target).children()[3].innerHTML.replace(/[^0-9,.]/ig,"")); 
+            jia = $(target).children()[3].innerHTML.replace(/[^0-9,.]/ig,"");
+            he += parseInt(jia) ;
+            yuan += parseInt(jia);
+        }
+        if(zt === false){
+            // console.log($(target).children()[3].innerHTML.replace(/[^0-9,.]/ig,"")); 
+            jia = $(target).children()[3].innerHTML.replace(/[^0-9,.]/ig,"");
+            he -= parseInt(jia) ;
+            yuan -= parseInt(jia);
+        }
+        // console.log(arr);
+        // console.log(jia);
+        // console.log(yuan);
+        she = yj - he;
+    })
+    setInterval(()=>{
+        checknum = $("input[type='checkbox']:checked").length;
+        $("#num").html(checknum);
+        $("#dpjia").html("￥"+he);
+        $("#ls").html("￥"+she);
+        $(".yj").html("￥"+yuan);
+    },500)
+
+
+
+    // 购物车
+    class Car{
+        constructor(){
+  
+        }
+        init(){
+          this.login = $(".name");
+          this.id = id;
+          $(".joincar").on("click",this.joincar.bind(this));
+          $(".shopcar").on("click",this.goshop.bind(this));
+        }
+        goshop(){
+          // console.log(this.login.text());
+          var username = this.login.text();
+          if(username == ""){
+            alert("请先登录!");
+            return false;
+          }
+        }
+        joincar(){
+            console.log(this.id);
+        }
+      }
+      var car = new Car();
+      car.init();
+      console.log(id);

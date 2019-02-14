@@ -15,9 +15,13 @@ img {
   width: 100%;
   min-height: 1000px;
   overflow: hidden; }
+  .contianer .Tbox {
+    width: 100%;
+    position: relative; }
   .contianer > a {
     display: block;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
     .contianer > a img {
       width: 100%; }
 
@@ -180,3 +184,11 @@ img {
   color: #fff;
   line-height: 60px;
   text-align: center; }
+
+.contianer .Tbox span {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 210px;
+  height: 160px;
+  cursor: pointer; }

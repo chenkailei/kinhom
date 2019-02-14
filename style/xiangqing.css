@@ -4,6 +4,7 @@ li{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 img{
     vertical-align: middle;
@@ -478,4 +479,170 @@ img{
 }
 .daodian span:hover{
     color: #f60;
+}
+.dapei{
+    width:1190px;
+    min-height:200px;
+    overflow: hidden;
+    /* background: #f60; */
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.dpnac{
+    width: 1188px;
+    height: 37px;   
+    border: 1px solid #ccc;
+    background: #eee;
+}
+.dpnac a{
+    display: inline-block;
+    width: 56px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 25px;
+    font-size: 14px;
+    border-right: 1px solid #ccc;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dpnac a.active{
+    background: #f60;
+    color: #fff;
+}
+.dapei .box{
+    width: 100%;
+    overflow: hidden;
+}
+.dpcontent,.tjcontent{
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-top: 10px;
+    display: none;
+    overflow: hidden;
+}
+.tjcontent{
+    padding: 20px 0;
+}
+.dpcontent.active,.tjcontent.active{
+    display: block;
+}
+.dpleft,.cent{
+    width: 165px;
+    height: 180px;
+    padding: 20px 44px 15px 10px;
+    position: relative;
+    float: left;
+}
+.cent{
+    padding: 0;
+    margin-right: 50px;
+}
+.cent #like{
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+}
+.cent .dpprice{
+    float: left;
+}
+#dptit{
+    width: 165px;
+    height: 36px;
+    padding-top: 8px;
+    line-height: 18px;
+    color: #8c8c8c;
+    font-size: 12px;
+    overflow: hidden;
+}
+.dpprice{
+    height: 19px;
+    padding: 3px 0;
+    color: #f60;
+    font-size: 12px;
+}
+.jiahao{
+    position: absolute;
+    font-size: 38px;
+    color: #f60;
+    font-weight: bold;
+    top: 50px;
+    right: 5px;
+}
+.dpcent{
+    width: 725px;height: 180px;
+    padding: 20px 0 15px 10px;
+    float: left;
+}
+.dprig{
+    width: 200px;
+    height: 185px;
+    padding: 15px 0;
+    float: left;
+}
+.buynum{
+    height: 19px;padding-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+.dpj{
+    height: 24px;padding-top: 20px;
+    font-size: 12px;
+    color: #333;
+}
+#dpjia{
+    font-size: 18px;
+}
+.lisheng,.yuanjia{
+    height: 16px;padding-top: 5px;
+    font-size: 12px;
+    color: #333;
+}
+.yj{
+    text-decoration:line-through;
+}
+.lisheng,#num,#dpjia{
+    color: #f60;
+}
+.buybtn{
+    height: 40px;margin-top: 20px;
+    width: 140px;
+    text-align: center;
+    background: #f60;
+    color: #fff;
+    box-sizing: content-box;
+    font-size: 18px;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.tjbox{
+    width: 1075px;
+    height: 194px;
+    margin: 0 auto;
+}
+.tjbox li{
+    float: left;
+    width: 165px;
+    height: 194px;
+    padding: 0 25px;
+}
+.tjbox li p:nth-child(2){
+    overflow: hidden;
+    height: 32px;
+    margin: 10px 0 3px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8c8c8c;
+    cursor: pointer;
+}
+.tjbox li p:nth-child(2):hover{
+    color: #f60;
+}
+.tjbox li p:nth-child(3){
+    height: 19px;
+    margin: 10px 0 3px;
+    color: #f60;
+    font-size: 14px;
+    text-align: center;
 }

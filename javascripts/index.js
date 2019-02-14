@@ -29,10 +29,44 @@ $(".navlist li a").removeClass("liactive")
         $(".out").hide();
       }
     })
+    
+    // 自动刷新
+    document.addEventListener('visibilitychange',function(){ //浏览器切换事件
+      if(document.visibilityState=='hidden') { //状态判断
+          location.reload();
+      }else {
+          location.reload();
+      }
+    });
+
+
 // 退出账号
     $(".out").on("click",()=>{
       $.cookie("users","")
     })
+
+// 购物车
+    class Car{
+      constructor(){
+
+      }
+      init(){
+        this.login = $(".name");
+
+        $(".shopcar").on("click",this.goshop.bind(this));
+      }
+      goshop(){
+        // console.log(this.login.text());
+        var username = this.login.text();
+        if(username == ""){
+          alert("请先登录!");
+          return false;
+        }
+      }
+    }
+    var car = new Car();
+    car.init();
+
 // banner图
 var mySwiper = new Swiper('.swiper-container', {
     loop:true,
@@ -64,7 +98,7 @@ $(".swiper-container").on("mouseleave",()=>{
   $(".swiper-button-next").hide();
 })
 
-// banner图
+
 
 // 联动
         var json = null;
