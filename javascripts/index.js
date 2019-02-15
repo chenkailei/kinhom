@@ -11,6 +11,7 @@ $(".navlist li a").removeClass("liactive")
 // 用户名
     
     $(window).ready(()=>{
+      
       $.cookie("__cfduid","")
       if(cookie = $.cookie("users")){
         var cok = cookie = $.cookie("users")
@@ -28,6 +29,21 @@ $(".navlist li a").removeClass("liactive")
         $(".sign").show();
         $(".out").hide();
       }
+      // console.log(JSON.parse($.cookie("carts")));
+      // 购物车数目
+      if($.cookie("carts")){
+      var carts =JSON.parse($.cookie("carts"));
+      var num = 0;
+      var addnum = 0;
+      console.log(carts);
+      for(i = 0;i<carts.length;i++){
+        // console.log(carts[i].num);
+        num = carts[i].num;
+        addnum +=num;
+      }
+      // console.log(addnum);
+      $(".carnum").html(addnum);
+    }
     })
     
     // 自动刷新
@@ -43,6 +59,7 @@ $(".navlist li a").removeClass("liactive")
 // 退出账号
     $(".out").on("click",()=>{
       $.cookie("users","")
+      $.cookie("carts","")
     })
 
 // 购物车
@@ -61,6 +78,9 @@ $(".navlist li a").removeClass("liactive")
         if(username == ""){
           alert("请先登录!");
           return false;
+        }
+        if(username !== ""){
+          location.href = "../html/shopcarts.html";
         }
       }
     }
@@ -187,7 +207,7 @@ $(".swiper-container").on("mouseleave",()=>{
                   var url = `https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${search.value}&json=1&p=3&sid=1422_21089_28131_26350_28266&req=2&csor=2`;
                   jsonp(url,"cb")
                   .then(function(res){
-                        console.log(res);
+                        // console.log(res);
                         var html = "";
                         res.s.every((item,index)=>{
                               html += `<li>${item}</li>`
@@ -205,6 +225,11 @@ $(".swiper-container").on("mouseleave",()=>{
                     },dealy)
               }
         }
+
+        $("#list").on("click",()=>{
+          location.href="../html/liebiao.html";
+          // console.log(1);
+        })
 
         // 吸顶
         var topnum = 150;

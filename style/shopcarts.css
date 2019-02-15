@@ -1,0 +1,92 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+img{
+    vertical-align: middle;
+}
+.rignav li:nth-child(2){
+    background: #f60;
+}
+.rignav li:nth-child(3){
+    background: #99918b;
+}
+.rignav li:nth-child(3):hover .app{
+    display: block;
+}
+.gouwudai{
+    width: 962px;
+    min-height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+.cartsbox,.carts{
+    min-height: 120px;
+    overflow: hidden;
+}
+.cartsbox .tit{
+    min-height: 40px;
+    background: #ccc;
+    margin-top: 20px;
+    line-height: 40px;
+    padding: 0 5px;
+}
+.carts{
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    padding: 0 3px;
+}
+.givem p,.tit p,.car .carxx{
+    float: left;
+}
+.tit p{
+    width: 236px;
+    font-size: 12px;
+    text-align: center;
+}
+.carts .car{
+    height: 80px;
+    padding: 20px 0;
+}
+.car .carxx{
+    width: 904px;
+    float: right;
+}
+.car .carxx li{
+    float: left;
+}
+.carxx li img{
+    width: 97px;height: 65px;
+    border: 1px solid #ccc;
+    float: left;
+}
+.carxx li p{
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    float: right;
+    font-size: 13px;
+    text-align: center;
+    line-height: 50px;
+}
+.givem{
+    height: 61px;
+    margin-top: 30px;
+    background: #f7f7f7;
+    font-size: 12px;
+    padding: 0 5px 0 229px;
+}
+.givem p{
+    width: 182px;
+    line-height: 61px;
+    height: 61px;
+    text-align: center;
+}
+.jiesuan{
+    background: red;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+.qk{
+    cursor: pointer;
+}

@@ -72,10 +72,34 @@ $(window).ready(()=>{
       $(".sign").show();
       $(".out").hide();
     }
+
+// 自动刷新
+document.addEventListener('visibilitychange',function(){ //浏览器切换事件
+    if(document.visibilityState=='hidden') { //状态判断
+        location.reload();
+    }else {
+        location.reload();
+    }
+  });
+
+
+    // 购物车数目
+    var carts =JSON.parse($.cookie("carts"));
+    var num = 0;
+    var addnum = 0;
+    // console.log(carts);
+    for(i = 0;i<carts.length;i++){
+      // console.log(carts[i].num);
+      num = carts[i].num;
+      addnum +=num;
+    }
+    // console.log(addnum);
+    $(".carnum").html(addnum);
   })
 // 退出账号
   $(".out").on("click",()=>{
     $.cookie("users","");
+    $.cookie("carts","");
     window.location.reload();
   })
 
@@ -169,10 +193,11 @@ $(".gotop").on("click",()=>{
         var he = 0;
         var she = 0;
         var yuan = 0;
-        var id = 0 ;
+        
+        var idarr = [] ;
         $.ajax(url)
             .then((res) =>{
-                console.log(res.id);
+                // console.log(res.id);
                 for(var i in res.gen){
                     arr.push(res[i])
                 }
@@ -182,8 +207,8 @@ $(".gotop").on("click",()=>{
                 thrbigurl = res.imgurl.max.thr;
                 foubigurl = res.imgurl.max.fou;
                 fivbigurl = res.imgurl.max.fiv;
-                id = res.id;
-                console.log(id);
+                idarr.push(res.id);
+                // console.log(id);
                 he = res.price.replace(/[^0-9,.]/ig,"");
                 she = res.scprice.replace(/[^0-9,.]/ig,"")-parseInt(he);
                 yuan = res.scprice.replace(/[^0-9,.]/ig,"");
@@ -427,7 +452,7 @@ $(".gotop").on("click",()=>{
         // console.log(arr);
         // console.log(jia);
         // console.log(yuan);
-        she = yj - he;
+        she = yuan - he;
     })
     setInterval(()=>{
         checknum = $("input[type='checkbox']:checked").length;
@@ -445,9 +470,12 @@ $(".gotop").on("click",()=>{
   
         }
         init(){
+          this.ida = [];
+          this.idlist={};
           this.login = $(".name");
-          this.id = id;
+          this.idarr = idarr;
           $(".joincar").on("click",this.joincar.bind(this));
+          $(".joincar").on("click",this.getnum.bind(this));
           $(".shopcar").on("click",this.goshop.bind(this));
         }
         goshop(){
@@ -456,12 +484,58 @@ $(".gotop").on("click",()=>{
           if(username == ""){
             alert("请先登录!");
             return false;
+          }else{
+              location.href = "../html/shopcarts.html";
           }
         }
         joincar(){
-            console.log(this.id);
+            // console.log(idarr[0]);
+            // console.log(this.idarr[0]);
+            if(cookie = $.cookie("carts")){
+                var idlist = JSON.parse(cookie);
+                var hassameid = idlist.some((item)=>{
+                    if(item.id === idarr[0]){
+                        item.num++;
+                    }
+                    return item.id === idarr[0];
+                })
+                if(!hassameid){
+                    var item = {
+                        "id" : idarr[0],
+                        "num" : 1
+                    }
+                    idlist.push(item);
+                }
+            }else if(!$.cookie("carts")){
+                var idlist = [
+                    {
+                        "id" : this.idarr[0],
+                        "num" : 1
+                    }
+                ]
+                
+                // console.log("新创建");
+            }
+        $.cookie("carts",JSON.stringify(idlist));
+        console.log($.cookie("carts"));
+        }
+        getnum(){
+            if($(".name").html() == ""){
+                alert("请先登录");
+                return false
+            }
+            // console.log($(".name").html(""));
+            if(!$.cookie("carts")){return false};
+            var idlist =    JSON.parse($.cookie("carts"));
+            // console.log(idlist);
+            var count = 0;
+            for(var i = 0;i < idlist.length;i++){
+                count += Number(idlist[i].num)
+            }
+            // console.log(count);
+            $(".carnum").html(count);
         }
       }
       var car = new Car();
       car.init();
-      console.log(id);
+      

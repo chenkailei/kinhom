@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表详情</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <link rel="shortcut icon" href="../img/idnex/ico.ico">
+    <script src="../javascripts/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/liebiao.css">
+</head>
+<body>
+        <div class="container">
+                <div class="top"></div>
+                <div class="head">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="">
+                            <img src="../img/idnex/img (1).jpg" alt="">
+                        </a>
+                        <a class="rightlogo" href="">
+                            <img src="../img/idnex/img (2).jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- 搜索框 -->
+                    <div class="searchbox">
+                        <form class="search" action="">
+                            <input class="puttxt" id="search_baidu" type="text" >
+                            <ul class="lis" id="list">
+                            </ul>
+                            <i class="iconfont fdj">&#xe633;</i>
+                        </form>
+                    </div>
+                    <!-- 注册登录 -->
+                    <a href="http://localhost/kinhom/html/login.html" class="login">登录</a>
+                    <a href="http://localhost/kinhom/html/sign.html" class="sign">注册</a>
+                    <a class="name"></a>
+                    <a href="http://localhost/kinhom/html/index.html" class="out">退出</a>
+                    <!-- 注册登录 -->
+                    <!-- 购物车 -->
+                    <div class="shopcarbox">
+                        <span class="shopcar">购物车</span>
+                        <span class="carnum">0</span>
+                    </div>
+                    <!-- 购物车 -->
+                </div>
+                <!-- 左侧导航 -->
+                <div class="Leftnav">
+                    <li class="active">人气榜</li>
+                    <li>实体店</li>
+                    <li>卧房</li>
+                    <li>客厅</li>
+                    <li>办公家具</li>
+                    <li>分类</li>
+                    <li>晒单</li>
+                </div>
+                <!-- 左侧导航 -->
+                <!-- 右侧导航 -->
+                <ul class="rignav">
+                    <li><a href="../html/huodong.html" style="width: 100%;"><img style="width:100%;" src="../img/idnex/huodong.gif" alt=""><img style="height:32.5px;" src="../img/idnex/xhr.jpg" alt=""></a></li>
+                    <li>实体店领<br>￥1000</li>
+                    <li><i class="iconfont">&#xe603;</i><br>客服</li>
+                    <li><i class="iconfont">&#xe607;</i><br>手机官网
+                        <div class="app">
+                            <img src="../img/idnex/img (42).jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="gotop"><i class="iconfont">&#xe63f;</i><br>回到顶部</li>
+                </ul>
+                <!-- 右侧导航 -->
+                <!-- 导航栏 -->
+                <div class="navbox">
+                    <div class="nav">
+                        <div class="Classify">
+                            <p>商品分类&nbsp;&nbsp;<i class="iconfont">&#xe60b;</i></p> 
+                            <div class="secnav">
+                                <div class="one">
+                                    <div class="onetop">
+                                        <i class="iconfont">&#xe602;</i>
+                                        <div class="left10">
+                                            <a href="">客厅</a>
+                                            <span>、</span>
+                                            <a href="">餐厅</a>
+                                        </div>
+                                    </div>
+                                    <div class="onebot">
+                                        <a class="navactive" href="">沙发</a>
+                                        <a href="">茶几</a>
+                                        <a class="navactive" href="">电视柜/地柜</a>
+                                        <a href="">餐桌</a>
+                                        <i class="iconfont right">&#xe79c;</i>
+                                    </div>
+                                    
+                                    <div class="thrnav">
+                                        <div class="thrleft">
+                                            <a class="size18" href="">客厅</a>
+                                            <div class="thrlist">   
+                                                <a href="">真皮沙发</a><span>|</span>
+                                                <a class="navactive" href="">布艺沙发</a><span>|</span>
+                                                <a href="">沙发床</a><span>|</span>
+                                                <a class="navactive" href="">电视柜/地柜</a><span>|</span>
+                                                <a class="navactive" href="">茶几</a><span>|</span><br>
+                                                <a href="">鞋柜(架)</a><span>|</span>
+                                                <a href="">斗柜</a><span>|</span>
+                                                <a href="">花架/书报架(柜)</a><span>|</span><br>
+                                                <a class="navactive" href="">酒柜/饰品柜(架)/间厅柜</a><span>|</span>
+                                                <a href="">客厅小配件</a><span>|</span>
+                                                <a href="">休闲几</a><span>|</span>
+                                                <a href="">休闲椅</a><span>|</span>
+                                                <a href="">电话几</a><span>|</span>
+                                                <a href="">凳子/折叠椅</a><span>|</span>
+                                                <a href="">吧台</a><span>|</span>
+                                                <a href="">吧椅</a><span>|</span>
+                                                <a class="navactive" href="">客厅套装</a><span>|</span>
+                                            </div>
+                                        </div>
+                                        <div class="thrleftbot">
+                                                <a class="size18" href="">餐厅</a>
+                                                <div class="thrlist">
+                                                    <a class="navactive" href="">餐桌</a><span>|</span>   
+                                                    <a href="">餐椅</a><span>|</span>
+                                                    <a href="">餐(边)柜</a><span>|</span>
+                                                    <a href="">餐车</a><span>|</span>
+                                                    <a class="navactive" href="">餐厅套装</a><span>|</span>
+                                                </div>
+                                        </div>
+                                        <div class="thrright">
+                                            <a href="">
+                                                <img src="../img/idnex/img (3).jpg" alt="">
+                                                <span>￥&nbsp;11309.00</span>
+                                            </a>
+                                            <a href="">
+                                                <img src="../img/idnex/img (9).jpg" alt="">
+                                                <span>￥&nbsp;6930.00</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="one">
+                                    <div class="onetop">
+                                        <i class="iconfont">&#xe60c;</i>
+                                        <div class="left10">
+                                            <a href="">卧房</a>
+                                            <span>、</span>
+                                            <a href="">书房</a>
+                                        </div>
+                                    </div>
+                                    <div class="onebot">
+                                        <a class="navactive" href="">床</a>
+                                        <a class="navactive" href="">床垫</a>
+                                        <a href="">衣柜</a>
+                                        <a href="">书桌/电脑桌</a>
+                                        <i class="iconfont right" style="margin-left:12px">&#xe79c;</i>
+                                    </div>
+                                    <div class="thrnav">
+                                        <div class="thrleft">
+                                            <a class="size18" href="">卧房</a>
+                                            <div class="thrlist">   
+                                                <a class="navactive" href="">床</a><span>|</span>
+                                                <a class="navactive" href="">床垫</a><span>|</span>
+                                                <a href="">床头柜</a><span>|</span>
+                                                <a href="">衣柜</a><span>|</span>
+                                                <a href="">妆台/妆镜/妆凳</a><span>|</span><br>
+                                                <a href="">衣架帽/穿衣镜</a><span>|</span>
+                                                <a href="">贵妃椅/床尾凳</a><span>|</span>
+                                                <a class="navactive" href="">卧房套装</a><span>|</span>
+                                            </div>
+                                        </div>
+                                        <div class="thrleftbot">
+                                                <a class="size18" href="">书房</a>
+                                                <div class="thrlist">   
+                                                    <a class="navactive" href="">书桌/电脑桌</a><span>|</span>
+                                                    <a href="">书椅/转椅</a><span>|</span>
+                                                    <a class="navactive" href="">书柜(架)</a><span>|</span>
+                                                    <a href="">书房小配件</a><span>|</span><br>
+                                                    <a href="">书房套装</a><span>|</span>
+                                                </div>
+                                            </div>
+                                        <div class="thrright">
+                                            <a href="">
+                                                <img src="../img/idnex/img (4).jpg" alt="">
+                                                <span>￥&nbsp;19495.00</span>
+                                            </a>
+                                            <a href="">
+                                                <img src="../img/idnex/img (6).jpg" alt="">
+                                                <span>￥&nbsp;5340.00</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="one">
+                                    <div class="onetop">
+                                        <i class="iconfont">&#xe663;</i>
+                                        <div class="left10">
+                                            <a href="">办公家具</a>
+                                        </div>
+                                    </div>
+                                    <div class="onebot">
+                                        <a class="navactive" href="">办公椅</a>
+                                        <a class="navactive" href="">办公桌(台)</a>
+                                        <a href="">办公屏风</a>
+                                        <i class="iconfont right" style="margin-left:10px">&#xe79c;</i>
+                                    </div>
+                                    <div class="thrnav">
+                                        <div class="thrleft">
+                                            <a class="size18" href="">办公家具</a>
+                                            <div class="thrlist">   
+                                                <a class="navactive" href="">办公桌(台)</a><span>|</span>
+                                                <a href="">电脑桌</a><span>|</span>
+                                                <a class="navactive" href="">办公椅</a><span>|</span>
+                                                <a class="navactive" href="">办公沙发</a><span>|</span>
+                                                <a href="">办公茶几</a><span>|</span>
+                                                <a class="navactive" href="">办公屏风</a><span>|</span>
+                                                <a href="">文件柜</a><span>|</span>
+                                                <a href="">保险柜</a><span>|</span>
+                                                <a class="navactive" href="">书柜(架)</a><span>|</span>
+                                                <a href="">洽谈台/会议台</a><span>|</span>
+                                                <a href="">前台/接待台</a><span>|</span>
+                                                <a href="">办公茶水柜</a><span>|</span>
+                                                <a href="">办公小配件</a><span>|</span>
+                                            </div>
+                                        </div>
+                                        <div class="thrright">
+                                            <a href="">
+                                                <img src="../img/idnex/img (8).jpg" alt="">
+                                                <span>￥&nbsp;3599.00</span>
+                                            </a>
+                                            <a href="">
+                                                <img src="../img/idnex/img (5).jpg" alt="">
+                                                <span>￥&nbsp;410.00</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="one">
+                                    <div class="onetop">
+                                        <i class="iconfont" style="font-size:20px">&#xe62f;</i>
+                                        <div class="left10">
+                                            <a href="">儿童家具</a>
+                                        </div>
+                                    </div>
+                                    <div class="onebot">
+                                        <a class="navactive" href="">儿童床</a>
+                                        <a href="">儿童衣柜</a>
+                                        <a href="">儿童斗柜</a>
+                                        <i class="iconfont right" style="margin-left:18px">&#xe79c;</i>
+                                    </div>
+                                    <div class="thrnav">
+                                        <div class="thrleft">
+                                            <a class="size18" href="">儿童家具</a>
+                                            <div class="thrlist">   
+                                                <a class="navactive" href="">儿童床</a><span>|</span>
+                                                <a href="">儿童床头柜</a><span>|</span>
+                                                <a href="">儿童衣柜</a><span>|</span>
+                                                <a class="navactive" href="">儿童房套装</a><span>|</span>
+                                                <a class="navactive" href="">儿童书桌/电脑桌</a><span>|</span>
+                                                <a href="">儿童书椅/转椅</a><span>|</span>
+                                                <a class="navactive" href="">儿童书柜(架)</a><span>|</span>
+                                                <a href="">儿童斗柜</a><span>|</span>
+                                                <a href="">儿童房小配件</a><span>|</span>
+                                            </div>
+                                        </div>
+                                        <div class="thrright">
+                                            <a href="">
+                                                <img src="../img/idnex/img (7).jpg" alt="">
+                                                <span>￥&nbsp;6440.00</span>
+                                            </a>
+                                            <a href="">
+                                                <img src="../img/idnex/img (10).jpg" alt="">
+                                                <span>￥&nbsp;9338.00</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="one">
+                                    <div class="onetop">
+                                        <i class="iconfont">&#xe65b;</i>
+                                        <div class="left10">
+                                            <a href="">家居百货</a>
+                                        </div>
+                                    </div>
+                                    <div class="onebot">
+                                        <a href="">床品套件</a>
+                                        <a href="">瓷砖</a>
+                                        <a href="">厨用小工具</a>
+                                        <i class="iconfont right" style="margin-left:18px">&#xe79c;</i>
+                                    </div>
+                                    <div class="thrnav">
+                                        <div class="thrleft">
+                                            <a class="size18" href="">家居百货</a>
+                                            <div class="thrlist">   
+                                                <a class="navactive" href="">床品套件</a><span>|</span>
+                                                <a href="">被子</a><span>|</span>
+                                                <a href="">枕头</a><span>|</span>
+                                                <a href="">地毯</a><span>|</span>
+                                                <a href="">瓷砖</a><span>|</span>
+                                                <a href="">厨用小工具</a><span>|</span>
+                                                <a href="">厨用套装</a><span>|</span>
+                                                <a href="">智能设备</a><span>|</span>
+                                                <a href="">钟</a><span>|</span>
+                                                <a href="">空气净化器</a><span>|</span>
+                                            </div>
+                                        </div>
+                                        <div class="thrright">
+                                            <a href="">
+                                                <img src="../img/idnex/img (16).jpg" alt="">
+                                                <span>￥&nbsp;1050.00</span>
+                                            </a>
+                                            <a href="">
+                                                <img src="../img/idnex/img (12).jpg" alt="">
+                                                <span>￥&nbsp;369.00</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="navlist">
+                                <li><a class="liactive" href="">首页</a></li>
+                                <li><a href="">住宅专场</a</li>
+                                <li><a href="">办公专场</a></li>
+                                <li><a href="">体验馆</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 导航栏 -->
+                <!-- 吸顶 -->
+                <div class="xiding">
+                    <div class="xdbox">
+                        <ul class="xdnav">
+                            <li class="active"><a href="">首页</a></li>
+                            <li><a href="">住宅专场</a></li>
+                            <li><a href="">办公专场</a></li>
+                            <li><a href="">体验馆</a></li>
+                        </ul>
+                        <div class="searchbox">
+                                <form class="search" action="">
+                                    <input class="puttxt" id="search_baidu" type="text" >
+                                    <ul class="lis" id="list">
+                                    </ul>
+                                    <i class="iconfont fdj">&#xe633;</i>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+                <!-- 吸顶 -->
+        <div class="tuijianbox">
+            <img src="../img/liebiao/good.jpg" alt="">
+            <h3>热门推荐</h3>
+        </div>
+        <ul class="tjbox">
+            <li><img src="../img/xiangqing/28one.jpg!small" alt=""><p><span>温暖世界 现代简约 原木色 榉木 1.5米双人大床</span><br><span>￥2350.00</span></p></li>
+            <li><img src="../img/xiangqing/29one.jpg!small" alt=""><p><span>现代简约 樱桃色 橡胶木 1.0米折叠台</span><br><span>￥1380.00</span></p></li>
+            <li><img src="../img/xiangqing/46one.jpg!small" alt=""><p><span>品格人生 现代简约 浅胡桃色 米纳米浮雕板 1.5米床</span><br><span>￥1180.00</span></p></li>
+            <li><img src="../img/xiangqing/47one.jpg!small" alt=""><p><span>现代简约 白枫色 实木颗粒板双人大床 1.8*2.0米</span><br><span>￥1618.00</span></p></li>
+        </ul>
+
+        <div class="xrbox">
+            <!-- <div class="list">
+                <div class="listimg">
+                    <img src="../img/xiangqing/28one.jpg!small" alt="">
+                </div>
+                <div class="listtit">
+                        现代简约 酒红色 头层真皮沙发 1+3+贵（坐下右）
+                </div>
+                <div class="listpri">
+                    ￥18490
+                </div>
+            </div> -->
+            
+        </div>
+        <!-- 联系我们 -->
+        <div class="usbox">
+                <div class="us">
+                    <div class="email">
+                        <h5>客服邮箱:<span>kinhom@heungkong.com</span></h5>
+                    </div>
+                    <ul class="advantage">
+                        <li>
+                            <a href="">
+                                <img src="../img/idnex/30.jpg" alt="">
+                                30年匠心打造
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/idnex/sevenday.jpg" alt="">
+                                7天无理由退换货
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/idnex/3a.jpg" alt="">
+                                AAA诚信企业
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/idnex/suda.jpg" alt="">
+                                多仓直发极速达
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ewm">
+                        <li>
+                            <img src="../img/idnex/img (38).jpg" alt=""><br> 
+                            手机官网
+                        </li>
+                        <li>
+                            <a href="">新浪微博</a><br>
+                            <a href="">反馈建议</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            <!-- 联系我们 -->
+            <div class="footer">
+                <p>
+                    COPYRIGHT 2017 KINHOM.COM ALL RIGHTS RESERVED.
+                    <a href="">粤公网安备 44011302001277号</a>
+                    <a href="">粤ICP备12018989号</a>
+                    深圳市金海马电子商务有限公司
+                </p>
+                <div class="approve">
+                    <img src="../img/idnex/img (90).jpg" alt="">
+                    <img src="../img/idnex/img (39).jpg" alt="">
+                    <img src="../img/idnex/img (40).jpg" alt="">
+                    <img src="../img/idnex/img (41).jpg" alt="">
+                </div>
+            </div>
+    </div>
+
+
+
+
+    <script>
+        $.ajax(
+            {
+                url:"https://list.mogujie.com/search",
+                type:"get",
+                dataType:"jsonp",
+                success:(res)=>{
+                    // console.log(res.result.wall.list);
+                    render(res.result.wall.list);
+                }
+            }
+        )    
+        function render(list){
+
+        var html = "";
+        list.forEach((item)=>{
+            // console.log(item);
+            html += `<div class="list">
+                        <div class="listimg">
+                            <img src="${item.show.img}" alt="">
+                        </div>
+                        <div class="listtit">
+                                ${item.title}
+                        </div>
+                        <div class="listpri">
+                                ${item.price}
+                        </div>
+                    </div>`
+        })
+
+        $(".xrbox").append(html);
+        }
+    </script>
+    <script src="../javascripts/liebiao.js"></script>
+</body>
+</html>
