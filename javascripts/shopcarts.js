@@ -114,6 +114,7 @@ $(".gotop").on("click",()=>{
 
   // 购物车
 $(window).on("load",()=>{
+  
   if($.cookie("carts")){
     // console.log(JSON.parse($.cookie("carts"))[0].id);
     // console.log(JSON.parse($.cookie("carts"))[0].num);
@@ -122,8 +123,9 @@ $(window).on("load",()=>{
     var urlarr = [];
     var html = "";
     var num = 0;
+    var numarr = [];
     var addpri = 0;
-    console.log(arr[0].num);  
+    // console.log(arr);  
     for (i = 0;i<arr.length;i++) {
       numobj = {
         i : arr[i]
@@ -138,9 +140,20 @@ $(window).on("load",()=>{
         });
         // var url = `../json/${id}.json`;
         urlarr.push("../json/"+arr[i].id+".json");
+        // console.log(arr[i]);
+        num = arr[i].num;
+        // console.log(num);
+        // numarr.push(arr[i].num);
+        // console.log(numarr);
 
-        $.ajax(urlarr[i])
-        .then((res)=>{
+
+        $.ajax({
+          url:urlarr[i],
+          type:"GET",
+          async: false,
+          success:function(res){
+            // console.log(res);
+            // console.log(num);
             html = `<div class="car">
                         <ul class="carxx">
                             <li style="width:204px;">
@@ -151,7 +164,7 @@ $(window).on("load",()=>{
                                 <p id="pri">${res.price}</p>
                             </li>
                             <li style="width:238px;">
-                                <p id="num">1</p>
+                                <p id="num">${num}</p>
                             </li>
                             <li style="width:223px;">
                                 <p id="addnum">${res.price}</p>
@@ -159,13 +172,18 @@ $(window).on("load",()=>{
                         </ul>
                     </div>`
             $(".carts").append(html);
-            addpri += parseInt(res.price.replace(/[^0-9,.]/ig,"")) ;
+            addpri += parseInt(res.price.replace(/[^0-9,.]/ig,"")*num) ;
             // console.log(res.price.replace(/[^0-9,.]/ig,""));
             $(".addpri").html("￥"+addpri.toFixed(2));
             $("#addpri").html("￥"+addpri.toFixed(2));
+          }
         })
+
+
+
+
         // $(".carts").html(html);
-        // console.log(html);
+        // console.log(arr);
         // for (i in arr) {
         //   numarr.push(arr[i].num);
         //   num = numarr[i];
@@ -174,8 +192,11 @@ $(window).on("load",()=>{
         
     }
     // console.log(numarr);
+
   }
+
 })
+
 
 // 清空购物车
 
