@@ -123,6 +123,7 @@ $(window).on("load",()=>{
     var urlarr = [];
     var html = "";
     var num = 0;
+    var hnum = 0;
     var numarr = [];
     var addpri = 0;
     // console.log(arr);  
@@ -154,6 +155,9 @@ $(window).on("load",()=>{
           success:function(res){
             // console.log(res);
             // console.log(num);
+            // var henum = num;
+            hnum +=num;
+            // console.log(hnum);
             html = `<div class="car">
                         <ul class="carxx">
                             <li style="width:204px;">
@@ -176,6 +180,7 @@ $(window).on("load",()=>{
             // console.log(res.price.replace(/[^0-9,.]/ig,""));
             $(".addpri").html("￥"+addpri.toFixed(2));
             $("#addpri").html("￥"+addpri.toFixed(2));
+            $(".addnum").html(hnum);
           }
         })
 

@@ -73,13 +73,17 @@ img{
     margin-top: 30px;
     background: #f7f7f7;
     font-size: 12px;
-    padding: 0 5px 0 229px;
+    padding: 0 5px 0 45px;
 }
 .givem p{
     width: 182px;
     line-height: 61px;
     height: 61px;
     text-align: center;
+}
+.addnum{
+    color: red;
+    font-size: 16px;
 }
 .jiesuan{
     background: red;
